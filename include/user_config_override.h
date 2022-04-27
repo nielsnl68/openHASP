@@ -23,8 +23,8 @@
 /***************************************************
           Http Server Settings
  **************************************************/
-#define HTTP_USERNAME ""
-#define HTTP_PASSWORD ""
+#define HTTP_USERNAME "admin"
+#define HTTP_PASSWORD "GoIns1d3"
 
 /***************************************************
           MQTT Client Settings
@@ -69,11 +69,11 @@
 /***************************************************
  *        Interface Language Settings
  **************************************************/
-#define HASP_LANGUAGE en_US // English
+//#define HASP_LANGUAGE en_US // English
 // #define HASP_LANGUAGE es_ES                       // Spanish
 // #define HASP_LANGUAGE fr_FR                       // French
 // #define HASP_LANGUAGE hu_HU                       // Hungarian
-// #define HASP_LANGUAGE nl_NL                       // Dutch
+ #define HASP_LANGUAGE nl_NL                       // Dutch
 // #define HASP_LANGUAGE pt_BR                       // Brazilian Portuguese
 // #define HASP_LANGUAGE pt_PT                       // Portuguese
 // #define HASP_LANGUAGE ro_RO                       // Romanian
@@ -144,12 +144,12 @@
  **************************************************/
 #define HASP_USE_CUSTOM 1                           // Enable compilation of custom code from /src/custom
 #define HASP_USE_HA                                 // Enable Home Assistant auto-discovery
-//#define HASP_START_CONSOLE 0                        // Disable starting of serial console at boot
+// #define HASP_START_CONSOLE 0                        // Disable starting of serial console at boot
 #define HASP_START_TELNET 0                         // Disable starting of telnet service at boot
 //#define HASP_START_HTTP 0                           // Disable starting of web interface at boot
 //#define HASP_START_FTP 0                            // Disable starting of ftp server at boot
 //#define LV_MEM_SIZE (64 * 1024U)                    // 64KiB of lvgl memory (default 48)
 //#define LV_VDB_SIZE (32 * 1024U)                    // 32KiB of lvgl draw buffer (default 32)
-//#define HASP_DEBUG_OBJ_TREE                         // Output all objects to the log on page changes
-//#define HASP_LOG_LEVEL LOG_LEVEL_VERBOSE            // LOG_LEVEL_* can be DEBUG, VERBOSE, TRACE, INFO, WARNING, ERROR, CRITICAL, ALERT, FATAL, SILENT
-#endif
+#define HASP_DEBUG_OBJ_TREE                           // Output all objects to the log on page changes
+#define HASP_LOG_LEVEL LOG_LEVEL_DEBUG                // LOG_LEVEL_* can be DEBUG, VERBOSE, TRACE, INFO, WARNING, ERROR, CRITICAL, ALERT, FATAL, SILENT
+#endif 
